@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-butter-50: #fdfbf7;   /* Latar Belakang Utama */
+  --color-butter-100: #f7e7ce;  /* Warm Cream */
+  --color-butter-200: #ebd2b0;  /* Butter Toast Header */
+  --color-butter-300: #fef3e2;  /* Alert Info Background */
+
+  --color-coffee-700: #5c3d2e;
+  --color-coffee-800: #4a3525;
+  --color-coffee-900: #3d2b1f;  /* Warna Teks Utama */
+
+  --color-brand-brown: #8c5a3c;  /* Warna Accent Tombol */
+  --color-brand-hover: #6f4228;  /* Hover Tombol */
+  --color-brand-sand: #d9c5b2;   /* Tombol Sekunder */
+  --color-brand-border: #e6d5c3; /* Border Kartu */
+}
+
+/* Mengatur default font family untuk seluruh halaman */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
