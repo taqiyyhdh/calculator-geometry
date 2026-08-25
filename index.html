@@ -16,30 +16,54 @@
   </head>
   <body>
 
-    <!-- Hero Section -->
-    <div class=" bg-primary bg-gradient text-white py-5">
-      <div class="container text-center">
-        <h1 class="display-4 fw-bold mb-3">
-          <i class="bi bi-rulers me-3"></i>Kalkulator Geometri
+    <!-- HERO SECTION -->
+    <header class="bg-linear-to-br from-butter-100 via-butter-200 to-butter-100 text-coffee-900 py-10 px-4 mb-8 border-b border-brand-border text-center shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-brown text-white rounded-2xl mb-4 shadow-md">
+          <i class="bi bi-calculator text-3xl"></i>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2 text-coffee-900">
+          Kalkulator Geometri
         </h1>
-        <p class="lead mb-4">Hitung luas bangun datar dan volume bangun ruang dengan mudah</p>
-        
-        <!-- Navigation Pills -->
-        <ul class="nav nav-pills justify-content-center gap-2" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active px-4 py-2" id="datar-tab" data-bs-toggle="pill" data-bs-target="#bangun-datar" type="button">
-              <i class="bi bi-square me-2"></i>Bangun Datar
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link nav-link px-4 py-2" id="ruang-tab" data-bs-toggle="pill" data-bs-target="#bangun-ruang" type="button">
-              <i class="bi bi-box me-2 "></i>Bangun Ruang
-            </button>
-          </li>
-        </ul>
-        
+        <p class="text-base md:text-lg text-coffee-700 font-medium max-w-xl mx-auto">
+          Hitung luas, keliling, dan volume bangun datar & bangun ruang secara presisi dengan tampilan elegan.
+        </p>
       </div>
-    </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-5xl mx-auto px-4 pb-16">
+
+      <!-- TAB NAVIGATION -->
+      <div class="flex justify-center mb-8">
+        <nav class="flex gap-2 p-1.5 bg-butter-200/60 rounded-2xl max-w-md w-full border border-brand-border" role="tablist">
+          
+          <!-- Tombol Tab Bangun Datar -->
+          <button 
+            class="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-semibold text-sm transition-all duration-200 bg-brand-brown text-white shadow-sm hover:bg-brand-hover active" 
+            id="datar-tab" 
+            data-bs-toggle="tab" 
+            data-bs-target="#datar" 
+            type="button" 
+            role="tab">
+            <i class="bi bi-square text-base"></i>
+            <span>Bangun Datar</span>
+          </button>
+
+          <!-- Tombol Tab Bangun Ruang -->
+          <button 
+            class="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-medium text-sm transition-all duration-200 text-coffee-800 hover:bg-butter-100 hover:text-coffee-900" 
+            id="ruang-tab" 
+            data-bs-toggle="tab" 
+            data-bs-target="#ruang" 
+            type="button" 
+            role="tab">
+            <i class="bi bi-box text-base"></i>
+            <span>Bangun Ruang</span>
+          </button>
+
+        </nav>
+      </div>
 
     <!-- Main Content -->
     <div class="container py-5">
