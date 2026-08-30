@@ -40,7 +40,7 @@
           
           <!-- Tombol Tab Bangun Datar -->
           <button 
-            class="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-semibold text-sm transition-all duration-200 bg-brand-brown text-white shadow-sm hover:bg-brand-hover active" 
+            class="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-semibold text-sm transition-rall duration-200 bg-brand-brown text-white shadow-sm hover:bg-brand-hover active" 
             id="datar-tab" 
             data-bs-toggle="tab" 
             data-bs-target="#datar" 
@@ -65,167 +65,115 @@
         </nav>
       </div>
 
-    <!-- Main Content -->
-    <div class="container py-5">
+      <!-- TAB CONTENT WRAPPER -->
       <div class="tab-content">
         
-        <!-- BANGUN DATAR -->
-        <div class="tab-pane fade show active" id="bangun-datar" role="tabpanel">
-          <h2 class="text-center mb-4 fw-bold">
-            <i class="bi bi-grid-3x3-gap me-2"></i>Pilih Bangun Datar
-          </h2>
-
-          <div class="row g-3">
-
-            <!-- Persegi -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalPersegi">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-square me-2"></i>Persegi</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- Persegi Panjang -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalPersegiPanjang">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-border-width me-2"></i>Persegi Panjang</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- Segitiga -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalSegitiga">
-                <div class="card-body py-4">
-                <h5 class="card-title mt-3 mb-0"><i class="bi bi-triangle me-2"></i>Segitiga</h5>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Lingkaran -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalLingkaran">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-circle me-2"></i>Lingkaran</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- Trapesium -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalTrapesium">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-pentagon me-2"></i>Trapesium</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- Jajaran Genjang -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalJajaranGenjang">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-suit-diamond me-2 " style="display: inline-block; transform: rotate(55deg);"></i>Jajaran Genjang</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- Belah Ketupat -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalBelahKetupat">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-suit-diamond me-2"></i>Belah Ketupat</h5>
-                </div>
-              </div>
-            </div>
-
-            <!-- Elips -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalElips">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-egg me-2"></i>Elips</h5>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-        <!-- BANGUN RUANG -->
-        <div class="tab-pane fade" id="bangun-ruang" role="tabpanel">
-          <h2 class="text-center mb-4 fw-bold">
-            <i class="bi bi-box-seam me-2"></i>Pilih Bangun Ruang
-          </h2>
+        <!-- ================= TAB 1: BANGUN DATAR ================= -->
+        <div class="tab-pane fade show active space-y-8" id="datar" role="tabpanel">
           
-          <div class="row g-3">
-            <!-- Kubus -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalKubus">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-box me-2"></i>Kubus</h5>
-                </div>
-              </div>
-            </div>
+          <!-- 1. Grid Pilih Bangun Datar -->
+          <div>
+            <h2 class="text-xl font-bold text-coffee-900 mb-4 text-center flex items-center justify-center gap-2">
+              <i data-lucide="layout-grid" class="w-5 h-5 text-brand-brown"></i> Pilih Bangun Datar
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <button type="button" data-shape="persegi" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="square" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Persegi</span>
+              </button>
 
-            <!-- Balok -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalBalok">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-box-seam me-2"></i>Balok</h5>
-                </div>
-              </div>
-            </div>
+              <button type="button" data-shape="persegi-panjang" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="rectangle-horizontal" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Persegi Panjang</span>
+              </button>
 
-            <!-- Bola -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalBola">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-circle me-2"></i>Bola</h5>
-                </div>
-              </div>
-            </div>
+              <button type="button" data-shape="segitiga" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="triangle" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Segitiga</span>
+              </button>
 
-            <!-- Kerucut -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalKerucut">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-cone me-2"></i>Kerucut</h5>
-                </div>
-              </div>
-            </div>
+              <button type="button" data-shape="lingkaran" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="circle" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Lingkaran</span>
+              </button>
 
-            <!-- Limas -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalLimas">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-gem me-2" style="display: inline-block; transform: rotate(180deg);"></i>Limas Segi-4</h5>
-                </div>
-              </div>
-            </div>
+              <button type="button" data-shape="trapesium" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="pentagon" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Trapesium</span>
+              </button>
 
-            <!-- Prisma -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalPrisma">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-triangle me-2"></i>Prisma Segitiga</h5>
-                </div>
-              </div>
-            </div>
+              <button type="button" data-shape="jajargenjang" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="rectangle-horizontal" class="w-7 h-7 mb-2 text-brand-brown -skew-x-12 group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Jajargenjang</span>
+              </button>
 
-            <!-- Tabung -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="card shadow-sm h-100 text-center" role="button" data-bs-toggle="modal" data-bs-target="#modalTabung">
-                <div class="card-body py-4">
-                  <h5 class="card-title mt-3 mb-0"><i class="bi bi-cup-straw me-2"></i>Tabung</h5>
-                </div>
-              </div>
+              <button type="button" data-shape="belah-ketupat" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="diamond" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Belah Ketupat</span>
+              </button>
+
+              <button type="button" data-shape="layang-layang" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="gem" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Layang-Layang</span>
+              </button>
             </div>
           </div>
+
         </div>
-        
+
+        <!-- ================= TAB 2: BANGUN RUANG ================= -->
+        <div class="tab-pane fade space-y-8 hidden" id="ruang" role="tabpanel">
+          
+          <!-- 1. Grid Pilih Bangun Ruang -->
+          <div>
+            <h2 class="text-xl font-bold text-coffee-900 mb-4 text-center flex items-center justify-center gap-2">
+              <i data-lucide="layout-grid" class="w-5 h-5 text-brand-brown"></i> Pilih Bangun Ruang
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <button type="button" data-shape="kubus" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="box" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Kubus</span>
+              </button>
+
+              <button type="button" data-shape="balok" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="package" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Balok</span>
+              </button>
+
+              <button type="button" data-shape="tabung" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="cylinder" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Tabung</span>
+              </button>
+
+              <button type="button" data-shape="kerucut" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="cone" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Kerucut</span>
+              </button>
+
+              <button type="button" data-shape="bola" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="globe" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Bola</span>
+              </button>
+
+              <button type="button" data-shape="prisma-segitiga" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="pyramid" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Prisma Segitiga</span>
+              </button>
+
+              <button type="button" data-shape="limas-segiempat" class="shape-card flex flex-col items-center justify-center p-5 bg-white rounded-2xl border border-brand-border shadow-sm hover:bg-butter-100 hover:border-brand-brown hover:shadow-md transition-all duration-200 group text-coffee-800">
+                <i data-lucide="pyramid" class="w-7 h-7 mb-2 text-brand-brown group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Limas Segiempat</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </div>
+
+    </main>
 
     <!-- ========== MODALS BANGUN DATAR ========== -->
   
@@ -858,6 +806,11 @@
       </div>
     </footer>
 
+    <!-- Lucide Icons CDN & Inisialisasi -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
     <script src="assets/js/script.js"></script>
     
   </body>
