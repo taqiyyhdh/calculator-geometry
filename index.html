@@ -140,6 +140,35 @@
               </div>
             </form>
           </div>
+
+          <!-- 3. Kartu Hasil Perhitungan Bangun Datar -->
+          <div class="hidden bg-white p-6 rounded-2xl border border-brand-border shadow-sm max-w-2xl mx-auto space-y-5" id="datar-result-card">
+            <div class="flex items-center justify-between pb-3 border-b border-butter-200">
+              <h3 class="text-lg font-bold text-coffee-900 flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600"></i>
+                <span>Hasil Perhitungan</span>
+              </h3>
+              <button type="button" id="copy-datar" class="text-xs font-semibold text-brand-brown hover:text-brand-hover bg-butter-100 hover:bg-butter-200 px-3 py-1.5 rounded-lg border border-brand-border transition-all flex items-center gap-1.5">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i> Salin Hasil
+              </button>
+            </div>
+
+            <!-- Ringkasan Angka Hasil -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="datar-result-badges">
+              <!-- Disunting secara dinamis oleh JS -->
+            </div>
+
+            <!-- Langkah Pengerjaan / Rumus -->
+            <div class="bg-butter-50/60 p-4 rounded-xl border border-butter-200 space-y-2">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-coffee-800 flex items-center gap-1.5">
+                <i data-lucide="book-open" class="w-4 h-4 text-brand-brown"></i> Rumus & Langkah Pengerjaan
+              </h4>
+              <div class="text-sm text-coffee-800 font-mono space-y-1" id="datar-result-steps">
+                <!-- Disunting secara dinamis oleh JS -->
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- ================= TAB 2: BANGUN RUANG ================= -->
@@ -209,6 +238,35 @@
               </div>
             </form>
           </div>
+
+          <!-- 3. Kartu Hasil Perhitungan Bangun Ruang -->
+          <div class="hidden bg-white p-6 rounded-2xl border border-brand-border shadow-sm max-w-2xl mx-auto space-y-5" id="ruang-result-card">
+            <div class="flex items-center justify-between pb-3 border-b border-butter-200">
+              <h3 class="text-lg font-bold text-coffee-900 flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600"></i>
+                <span>Hasil Perhitungan</span>
+              </h3>
+              <button type="button" id="copy-ruang" class="text-xs font-semibold text-brand-brown hover:text-brand-hover bg-butter-100 hover:bg-butter-200 px-3 py-1.5 rounded-lg border border-brand-border transition-all flex items-center gap-1.5">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i> Salin Hasil
+              </button>
+            </div>
+
+            <!-- Ringkasan Angka Hasil -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="ruang-result-badges">
+              <!-- Disunting secara dinamis oleh JS -->
+            </div>
+
+            <!-- Langkah Pengerjaan / Rumus -->
+            <div class="bg-butter-50/60 p-4 rounded-xl border border-butter-200 space-y-2">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-coffee-800 flex items-center gap-1.5">
+                <i data-lucide="book-open" class="w-4 h-4 text-brand-brown"></i> Rumus & Langkah Pengerjaan
+              </h4>
+              <div class="text-sm text-coffee-800 font-mono space-y-1" id="ruang-result-steps">
+                <!-- Disunting secara dinamis oleh JS -->
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
